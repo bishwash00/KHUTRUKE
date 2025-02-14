@@ -453,10 +453,14 @@ section {
 .btn-testimonial {
   width: 2.4rem;
   border: none;
+  background-color: #fdf2e9;
   color: #e67e22;
   position: absolute;
   cursor: pointer;
   transition: all 0.3s;
+}
+.btn-testimonial-icon {
+  background-color: #fdf2e9;
 }
 .btn-testimonial:hover {
   transform: translate(0, -50%);
