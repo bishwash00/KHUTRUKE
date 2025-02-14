@@ -178,7 +178,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 dotContainer.addEventListener('click', function (e) {
-  if (e.target.classList.contains('dots__dotdots__dot')) {
+  if (e.target.classList.contains('dots__dot')) {
     currentSlide = e.target.dataset.slide;
     moveSlider(currentSlide);
   }
