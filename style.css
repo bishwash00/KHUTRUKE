@@ -161,10 +161,12 @@ section {
   transition: all 0.5s;
 }
 .btn-mobile-nav {
+  background-color: #fdf2e9;
   display: none;
 }
 .btn-close-mobile-nav {
   display: none;
+  background-color: #fdf2e9;
 }
 .header-section {
   background-color: #fdf2e9;
