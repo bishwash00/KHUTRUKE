@@ -171,8 +171,6 @@ body {
   height: 4.4rem;
   transition: all 0.3s;
 }
-.login-main-nav {
-}
 .login-form {
   display: flex;
   gap: 0.4rem;
