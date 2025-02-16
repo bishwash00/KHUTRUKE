@@ -118,7 +118,7 @@ const movePreviousSlide = function () {
 };
 
 //Learn More btn
-learnMoreBtn.addEventListener('click', function (e) {
+learnMoreBtn.addEventListener('click', function () {
   sectionFeatures.scrollIntoView({ behavior: 'smooth' });
 });
 
