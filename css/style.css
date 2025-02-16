@@ -751,52 +751,6 @@ section {
   line-height: 1.6;
 }
 
-/* FOR LOGIN PAGE  */
-
-.login-main-nav {
-}
-.login-form {
-  display: flex;
-  gap: 0.4rem;
-}
-.login-form input {
-  font-size: 1.2rem;
-  padding: 1rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 1rem;
-}
-.login-nav-btn {
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  color: #fff;
-  font-size: 1.2rem;
-  /* width: 8rem; */
-}
-.main-login-btn:hover {
-  background-color: #cf711f;
-}
-.login-form .sign-up-btn {
-  color: #e67e22;
-  background-color: #fdf2e9;
-  border: 2px solid #e67e22;
-  transition: all 0.5s;
-}
-.login-form .sign-up-btn:hover {
-  background-color: #e67e22;
-  color: #fff;
-}
-.login-form input {
-  padding-left: 2.4rem;
-  background-size: 1.4rem;
-  background-repeat: no-repeat;
-  background-position: 0.5rem 1rem;
-}
-.login-form input[type='text'] {
-  background-image: url('/assests/Icons/person-outline.svg');
-}
-.login-form input[type='password'] {
-  background-image: url('/assests/Icons/lock-closed-outline.svg');
-}
 /* - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 - Font sizes (px)
