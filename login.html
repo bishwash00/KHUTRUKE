@@ -33,7 +33,7 @@
           ><img src="/assests/logo.png" alt="logo" class="nav-logo" />
         </a>
         <nav class="login-main-nav">
-          <form action="#" class="login-form">
+          <form action="#" class="login-form" name="sign-form">
             <input type="text" id="login-username" placeholder="Username" />
             <input type="password" id="login-pin" placeholder="PIN" />
             <button class="btn login-nav-btn main-login-btn">Login</button>
@@ -148,7 +148,336 @@
         </section>
       </main>
     </div>
-    <div class="login--after"></div>
+    <div class="sign-up-modal animated-hidden">
+      <button class="btn--close-modal">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <p class="header--secondary header--form">
+        Open your Khutruke account in just 2 minutes
+      </p>
+      <form class="sign-up-form grid" action="#">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="Daniel Caesar" />
+
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="me@example.com" />
+
+        <label for="pin">PIN</label>
+        <input id="pin" type="password" />
+
+        <label for="confirm-pin">Confirm PIN</label>
+        <input id="confirm-pin" type="password" />
+        <button class="btn modal-btn sign-up-btn">Sign up</button>
+      </form>
+    </div>
+    <div class="form-overlay animated-hidden"></div>
+    <div class="login--after animated-hidden">
+      <div class="login-container">
+        <div class="login-nav">
+          <a href="#">
+            <img
+              class="login-nav-logo"
+              src="/assests/logo.png"
+              alt="khutruke-logo"
+            />
+          </a>
+          <div class="pfp">
+            <img
+              class="login-pfp"
+              src="/assests/customer-img/customer-1.jpg"
+              alt="customer-img"
+            />
+            <p class="pfp-name">Gilbert Thomas</p>
+          </div>
+          <nav class="login-main-nav">
+            <ul class="login-nav-items">
+              <li class="login-nav-item active-nav-item">
+                <ion-icon
+                  name="clipboard-outline"
+                  class="login-nav-icon"
+                ></ion-icon>
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+              </li>
+              <li class="login-nav-item">
+                <ion-icon
+                  name="paper-plane-outline"
+                  class="login-nav-icon"
+                ></ion-icon>
+                <a href="#send-money" class="nav-link">Send Money</a>
+              </li>
+              <li class="login-nav-item">
+                <ion-icon name="cash-outline" class="login-nav-icon"></ion-icon>
+                <a href="#load-money" class="nav-link">Load Money</a>
+              </li>
+              <li class="login-nav-item">
+                <ion-icon
+                  name="settings-outline"
+                  class="login-nav-icon"
+                ></ion-icon>
+                <a href="#settings" class="nav-link">Settings</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn log-out-btn">
+            <ion-icon name="log-out-outline"></ion-icon>Log out
+          </button>
+          <div class="log-out-timer">
+            <p>You will be logged out in <span class="timer">5:00</span></p>
+          </div>
+        </div>
+        <div class="dashboard nav-section" id="dashboard">
+          <div class="login-header grid grid--2-cols">
+            <div class="main-header">
+              <p class="header--tertiary">
+                Welcome back, <span class="welcome-name">Thomas</span>!
+              </p>
+              <p class="login-header-description">
+                Take a look at your dashboard overview
+              </p>
+            </div>
+            <div class="header-icons">
+              <ion-icon name="search-outline" class="header-icon"></ion-icon>
+              <ion-icon
+                name="notifications-outline"
+                class="header-icon"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="balance-container">
+            <div class="balance-info">
+              <div class="balance-header">
+                <p class="header--tertiary">Account Balance</p>
+              </div>
+              <div class="balance-amount">
+                <p class="header--tertiary">
+                  <span class="balance--amt">$ 21,000.00</span>
+                </p>
+              </div>
+              <div class="balance-description">
+                <p>As of <span>2025/02/17, 10:31:10</span></p>
+              </div>
+            </div>
+            <div class="balance-img">
+              <img
+                class="wallet-img"
+                src="/assests/wallet-img.png"
+                alt="wallet-illustration"
+              />
+            </div>
+          </div>
+          <div class="balance-deposit">
+            <div>
+              <p class="recent-header">Recent Deposit</p>
+            </div>
+            <div>
+              <p class="deposit-balance">$400.00</p>
+            </div>
+          </div>
+          <div class="balance-withdrawl">
+            <div>
+              <p class="recent-header">Recent Withdrawl</p>
+            </div>
+            <div>
+              <p class="withdrawl-balance">-$400.00</p>
+            </div>
+          </div>
+          <div class="balance-in-out">
+            <div class="interest-info">
+              <p>Interest Earned</p>
+            </div>
+            <div class="interest-amt">
+              <span class="total-interest">$510.00</span>
+            </div>
+            <div class="deposit-info">
+              <p>Total Deposits</p>
+            </div>
+            <div class="deposit-amt">
+              <span class="total-deposit">$510.00</span>
+            </div>
+            <div class="interest-info">
+              <p>Total Withdrawls</p>
+            </div>
+            <div class="withdrawl-amt">
+              <span class="total-withdrawl">$510.00</span>
+            </div>
+          </div>
+          <div class="balance-history">
+            <div class="movement">
+              <div class="movement_type movement_type-deposit">7 deposit</div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-deposit">$400.00</div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-withdrawl">
+                6 withdrawl
+              </div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-withdrawl">
+                -$400.00
+              </div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-deposit">5 deposit</div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-deposit">$400.00</div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-deposit">4 deposit</div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-deposit">$400.00</div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-withdrawl">
+                3 withdrawl
+              </div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-withdrawl">
+                -$400.00
+              </div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-withdrawl">
+                2 withdrawl
+              </div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-withdrawl">
+                -$400.00
+              </div>
+            </div>
+            <div class="movement">
+              <div class="movement_type movement_type-deposit">1 deposit</div>
+              <div class="movement__date">2025/05/04, 10:31:10</div>
+              <div class="movement__value movement__value-deposit">$400.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="send__money nav-section hidden" id="send-money">
+          <div class="login-header">
+            <div class="main-header">
+              <p class="header--tertiary">Send Money</p>
+              <p class="login-header-description">
+                Quick, Secure, and Easy Transfers to Anyone, Anytime
+              </p>
+            </div>
+          </div>
+          <div class="interfaces">
+            <div class="interface via--username">
+              <div class="main-interface">
+                <p class="interface-header">Transfer via Username</p>
+                <form action="#" class="form form-transfer">
+                  <label class="form__label">Transfer to</label>
+                  <input
+                    type="text"
+                    class="form__input form__input--to--name"
+                  />
+                  <label class="form__label">Amount</label>
+                  <input
+                    type="number"
+                    class="form__input form__input--amount--name"
+                  />
+                  <button class="form__btn form__btn--transfer--name">→</button>
+                </form>
+              </div>
+              <div class="interface-visual"></div>
+            </div>
+            <div class="interface via--email">
+              <div class="main-interface">
+                <p class="interface-header">Transfer via Email</p>
+                <form action="#" class="form form-transfer">
+                  <label class="form__label">Transfer to</label>
+                  <input
+                    type="email"
+                    class="form__input form__input--to--mail"
+                  />
+                  <label class="form__label">Amount</label>
+                  <input
+                    type="number"
+                    class="form__input form__input--amount--mail"
+                  />
+                  <button class="form__btn form__btn--transfer--mail">→</button>
+                </form>
+              </div>
+              <div class="interface-visual"></div>
+            </div>
+          </div>
+        </div>
+        <div class="load__money nav-section hidden" id="load-money">
+          <div class="login-header">
+            <div class="main-header">
+              <p class="header--tertiary">Load Money with Ease</p>
+              <p class="login-header-description">
+                Add funds to your Khutruke wallet quickly and securely from
+                multiple sources.
+              </p>
+            </div>
+          </div>
+          <div class="interfaces">
+            <div class="interface via--loan">
+              <div class="main-interface">
+                <p class="interface-header">Load via loan</p>
+                <form action="#" class="form form-loan">
+                  <label class="form__label">Loan Amount</label>
+                  <input type="number" class="form__input form__loan--amt" />
+                  <button class="form__btn form__btn--loan">→</button>
+                </form>
+              </div>
+              <div class="interface-visual"></div>
+            </div>
+            <div class="interface via--request">
+              <div class="main-interface">
+                <p class="interface-header">Load via requesting friends</p>
+                <form action="#" class="form form-transfer">
+                  <label class="form__label">Request to</label>
+                  <input
+                    type="text"
+                    class="form__input form__request--to"
+                    placeholder="Username"
+                  />
+                  <label class="form__label">Amount</label>
+                  <input
+                    type="number"
+                    class="form__input form__input-req-amount"
+                  />
+                  <button class="form__btn form__btn-loan-req">→</button>
+                </form>
+              </div>
+              <div class="interface-visual"></div>
+            </div>
+          </div>
+        </div>
+        <div class="settings nav-section hidden" id="settings">
+          <div class="login-header">
+            <div class="main-header">
+              <p class="header--tertiary">Settings</p>
+            </div>
+          </div>
+          <div class="setting-options">
+            <div class="option">
+              <p>Sort according to recent transactions</p>
+              <button class="btn sort-btn status_on">
+                <span class="btn-status">ON</span>
+              </button>
+            </div>
+            <div class="option">
+              <p>ISO</p>
+              <select name="timezones" id="locales" class="locales">
+                <option value="en-EN">en-En</option>
+              </select>
+            </div>
+            <div class="option">
+              <p>Currency</p>
+              <select name="currency" id="currencies" class="currencies">
+                <option value="dollar">American Dollar $</option>
+                <option value="euro">Euro €</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="login-script.js"></script>
     <script
       type="module"
