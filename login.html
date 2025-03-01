@@ -225,7 +225,9 @@
             <ion-icon name="log-out-outline"></ion-icon>Log out
           </button>
           <div class="log-out-timer">
-            <p>You will be logged out in <span class="timer">5:00</span></p>
+            <p>
+              You will be logged out in <span class="logout-timer">5:00</span>
+            </p>
           </div>
         </div>
         <div class="dashboard nav-section" id="dashboard">
@@ -257,7 +259,9 @@
                 </p>
               </div>
               <div class="balance-description">
-                <p>As of <span>2025/02/17, 10:31:10</span></p>
+                <p>
+                  As of <span class="balance-date">2025/02/17, 10:31:10</span>
+                </p>
               </div>
             </div>
             <div class="balance-img">
@@ -463,15 +467,21 @@
             </div>
             <div class="option">
               <p>ISO</p>
-              <select name="timezones" id="locales" class="locales">
-                <option value="en-EN">en-En</option>
+              <select name="iso" id="locales" class="locales">
+                <option value="default">Default</option>
+                <option value="en-EN">en-US</option>
+                <option value="en-CA">en-CA</option>
+                <option value="en-GB">en-GB</option>
+                <option value="es-ES">es-ES</option>
+                <option value="zh">zh</option>
+                <option value="ja-JP">ja-JP</option>
               </select>
             </div>
             <div class="option">
               <p>Currency</p>
               <select name="currency" id="currencies" class="currencies">
-                <option value="dollar">American Dollar $</option>
-                <option value="euro">Euro €</option>
+                <option value="USD">American Dollar $</option>
+                <option value="EUR">Euro €</option>
               </select>
             </div>
           </div>
