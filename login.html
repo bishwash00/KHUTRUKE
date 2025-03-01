@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" href="/assests/apple-khuturke.png" />
     <link rel="manifest" href="/asides/manifest.webmanifest" />
     <link rel="stylesheet" href="/css/login-style.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
+    <link rel="stylesheet" href="/css/login-queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,20 +29,27 @@
   <body>
     <div class="login--before">
       <header class="header">
-        <a href="#"
+        <a href="index.html"
           ><img src="/assests/logo.png" alt="logo" class="nav-logo" />
         </a>
         <nav class="login-main-nav">
-          <form action="#" class="login-form" name="sign-form">
+          <form action="#" class="login-form login-form-open" name="sign-form">
             <input type="text" id="login-username" placeholder="Username" />
             <input type="password" id="login-pin" placeholder="PIN" />
             <button class="btn login-nav-btn main-login-btn">Login</button>
             <button class="btn sign-up-btn login-nav-btn">Register</button>
           </form>
+          <button class="btn-login-nav">
+            <ion-icon
+              class="icon-mobile-nav md hydrated"
+              name="menu-outline"
+              role="img"
+            ></ion-icon>
+          </button>
         </nav>
       </header>
       <main>
-        <section class="login-hero-section">
+        <section class="login-hero-section login-hero-section-open">
           <div class="login-hero">
             <div class="login-hero-text">
               <h1 class="header--primary">
@@ -121,10 +128,10 @@
                     </svg>
                   </div>
                   <div>
-                    <p>-$0.00</p>
+                    <p class="description-text">-$0.00</p>
                   </div>
                   <div>
-                    <p>No Transfer Fee!</p>
+                    <p class="description-text">No Transfer Fee!</p>
                   </div>
                 </div>
                 <div class="visual-box">

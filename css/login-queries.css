@@ -1,0 +1,102 @@
+@media (max-width: 83em) {
+  .login-hero {
+    max-width: 120rem;
+  }
+  .header--primary {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .login-hero {
+    gap: 4.8rem;
+  }
+  .showcase-description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 50%;
+  }
+  .login-hero {
+    grid-template-columns: 1fr;
+  }
+  .login-hero-text {
+    text-align: center;
+  }
+  .feature-showcase {
+    justify-content: center;
+  }
+  .login-hero-visual {
+    width: 75%;
+    justify-self: center;
+    padding-bottom: 8px;
+  }
+  .login-hero-visual::after {
+    height: 62%;
+  }
+}
+
+@media (max-width: 45.625em) {
+  .header--primary {
+    font-size: 3.6rem;
+  }
+  .btn-login-nav {
+    display: block;
+    border: none;
+    background-color: #fdf2e9;
+  }
+  .icon-mobile-nav {
+    height: 4.8rem;
+    width: 3.8rem;
+    color: #333;
+  }
+  .header {
+    position: relative;
+  }
+  .login-form {
+    position: absolute;
+    top: -4.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+  }
+  .login-form-open {
+    top: 8rem;
+  }
+  .login-hero-section-open {
+    transition: all 0.3s;
+    padding-top: 8.6rem;
+  }
+  .visual-direction-icon {
+    height: 2.4rem;
+  }
+  .visual-heading {
+    font-size: 2.4rem;
+  }
+  .description-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 33em) {
+  html {
+    font-size: 31.25%;
+  }
+  .sign-up-btn {
+    display: none;
+  }
+  .header--description {
+    font-size: 1.6rem;
+  }
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
