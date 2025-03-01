@@ -85,9 +85,6 @@
 }
 
 @media (max-width: 33em) {
-  html {
-    font-size: 31.25%;
-  }
   .sign-up-btn {
     display: none;
   }
