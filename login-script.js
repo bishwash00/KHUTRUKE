@@ -485,12 +485,18 @@ localeSelection.addEventListener('change', function (e) {
 
   changeTimer = setInterval(refreshTime.bind(null, locale), 1000);
   updateUI(currentAccount, cur_type, locale);
+
+  clearInterval(logOutTime);
+  startLogOutTimer();
 });
 
 // CURRENCY
 currencySelection.addEventListener('change', function (e) {
   cur_type = currencySelection.value;
   updateUI(currentAccount, cur_type, locale);
+
+  clearInterval(logOutTime);
+  startLogOutTimer();
 });
 
 const getLocale = () => navigator.language;
