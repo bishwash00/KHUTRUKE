@@ -352,7 +352,7 @@ btnLogin.addEventListener('click', function (e) {
     loginTimer = setInterval(refreshTime.bind(null, locale), 1000);
 
     beforePage.classList.add('hidden');
-    afterPage.classList.remove('animated-hidden');
+    afterPage.classList.remove('hidden');
 
     loginUsername.value = loginPIN.value = '';
     loginUsername.blur();
@@ -373,7 +373,7 @@ btnLogout.addEventListener('click', function (e) {
 const logOUT = function () {
   currentAccount = undefined;
   beforePage.classList.remove('hidden');
-  afterPage.classList.add('animated-hidden');
+  afterPage.classList.add('hidden');
   clearInterval(logOutTime);
   setTimeout(() => alert('You have been logged out!'), 500);
 };

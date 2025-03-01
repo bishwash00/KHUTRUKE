@@ -75,6 +75,7 @@ body {
   font-family: 'Rubik', serif;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -214,6 +215,7 @@ body {
 }
 .login-hero-section {
   padding-top: 4.8rem;
+  transition: all 0.3s;
 }
 .login-hero {
   max-width: 130rem;
