@@ -52,6 +52,7 @@ const signUPbtn = document.querySelector('.sign-up-btn');
 const signUPmodal = document.querySelector('.sign-up-modal');
 const formOverlay = document.querySelector('.form-overlay');
 const closeModalbtn = document.querySelector('.btn--close-modal');
+const loginForm = document.querySelector('.login-form');
 const navItems = document.querySelector('.login-nav-items');
 const allnavItems = document.querySelectorAll('.login-nav-item');
 const allnavSections = document.querySelectorAll('.nav-section');
@@ -61,8 +62,8 @@ const loginUsername = document.querySelector('#login-username');
 const loginPIN = document.querySelector('#login-pin');
 const welcomeName = document.querySelector('.welcome-name');
 const pfpName = document.querySelector('.pfp-name');
-const localeSelection = document.querySelector('.locales');
-const currencySelection = document.querySelector('.currencies');
+const btnOpenLoginNav = document.querySelector('.btn-login-nav');
+const sectionHero = document.querySelector('.login-hero-section');
 
 const openForm = function (e) {
   e.preventDefault();
@@ -99,6 +100,12 @@ navItems.addEventListener('click', function (e) {
   }
 });
 
+btnOpenLoginNav.addEventListener('click', function (e) {
+  e.preventDefault();
+  loginForm.classList.toggle('login-form-open');
+  sectionHero.classList.toggle('login-hero-section-open');
+});
+
 //APP INTERFACE
 const balanceHistory = document.querySelector('.balance-history');
 const balanceAmount = document.querySelector('.balance--amt');
@@ -120,6 +127,8 @@ const reqAmount = document.querySelector('.form__input-req-amount');
 const reqBtn = document.querySelector('.form__btn-loan-req');
 const btnSort = document.querySelector('.sort-btn');
 const sortStatus = document.querySelector('.btn-status');
+const localeSelection = document.querySelector('.locales');
+const currencySelection = document.querySelector('.currencies');
 const labelDate = document.querySelector('.balance-date');
 const labelLogOutTimer = document.querySelector('.logout-timer');
 
@@ -363,6 +372,9 @@ btnLogin.addEventListener('click', function (e) {
 
     startLogOutTimer();
     updateUI(currentAccount);
+  } else {
+    alert('Username or PIN is invalid!');
+    loginUsername.value = loginPIN.value = '';
   }
 });
 
