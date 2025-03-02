@@ -27,7 +27,7 @@
     />
   </head>
   <body>
-    <div class="login--before">
+    <div class="login--before hidden">
       <header class="header">
         <a href="index.html"
           ><img src="/assests/logo.png" alt="logo" class="nav-logo" />
@@ -182,9 +182,9 @@
     </div>
     <div class="form-overlay animated-hidden"></div>
 
-    <div class="login--after hidden">
+    <div class="login--after">
       <div class="login-container">
-        <div class="login-nav">
+        <div class="login-nav login-nav-mobile">
           <a href="#">
             <img
               class="login-nav-logo"
@@ -238,8 +238,17 @@
             </p>
           </div>
         </div>
+        <div class="logged-in-nav">
+          <button class="btn-logged-in-nav">
+            <ion-icon
+              class="icon-btn-nav md hydrated"
+              name="menu-outline"
+              role="img"
+            ></ion-icon>
+          </button>
+        </div>
         <div class="dashboard nav-section" id="dashboard">
-          <div class="login-header grid grid--2-cols">
+          <div class="login-header grid">
             <div class="main-header">
               <p class="header--tertiary">
                 Welcome back, <span class="welcome-name">Thomas</span>!
@@ -298,19 +307,19 @@
           </div>
           <div class="balance-in-out">
             <div class="interest-info">
-              <p>Interest Earned</p>
+              <p class="info-title">Interest Earned</p>
             </div>
             <div class="interest-amt">
               <span class="total-interest">$510.00</span>
             </div>
             <div class="deposit-info">
-              <p>Total Deposits</p>
+              <p class="info-title">Total Deposits</p>
             </div>
             <div class="deposit-amt">
               <span class="total-deposit">$510.00</span>
             </div>
             <div class="interest-info">
-              <p>Total Withdrawls</p>
+              <p class="info-title">Total Withdrawls</p>
             </div>
             <div class="withdrawl-amt">
               <span class="total-withdrawl">$510.00</span>
