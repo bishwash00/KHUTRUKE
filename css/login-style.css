@@ -514,6 +514,7 @@ body {
   padding-top: 3.2rem;
   grid-column: 1 / -1;
   grid-template-columns: 1fr auto;
+  row-gap: 0;
 }
 .login-header .header--tertiary {
   margin-bottom: 1.6rem;
@@ -522,6 +523,7 @@ body {
 .login-header-description {
   font-size: 1.6rem;
   font-weight: 500;
+  grid-column: 1 / -1;
 }
 .header-icons {
   justify-self: end;
@@ -604,6 +606,9 @@ body {
 .interest-amt,
 .deposit-amt {
   color: #40c057;
+}
+.recent-balances {
+  display: none;
 }
 .withdrawl-amt {
   color: #fa5252;
