@@ -131,6 +131,9 @@ const localeSelection = document.querySelector('.locales');
 const currencySelection = document.querySelector('.currencies');
 const labelDate = document.querySelector('.balance-date');
 const labelLogOutTimer = document.querySelector('.logout-timer');
+const loggedInNav = document.querySelector('.login-nav');
+const btnLoggedInNav = document.querySelector('.btn-logged-in-nav');
+const btnCloseLoggedInNav = document.querySelector('.btn-close-logged-in-nav');
 
 //DISPLAYING BALANCE HISTORY
 const formatDates = function (date, locale = 'default') {
@@ -512,3 +515,16 @@ currencySelection.addEventListener('change', function (e) {
 });
 
 const getLocale = () => navigator.language;
+
+//MOBILE NAV
+btnLoggedInNav.addEventListener('click', function () {
+  loggedInNav.classList.toggle('login-nav-close');
+  loggedInNav.classList.toggle('login-nav-open');
+  btnLoggedInNav.classList.add('animated-hidden');
+});
+
+btnCloseLoggedInNav.addEventListener('click', function () {
+  loggedInNav.classList.toggle('login-nav-close');
+  loggedInNav.classList.toggle('login-nav-open');
+  btnLoggedInNav.classList.remove('animated-hidden');
+});

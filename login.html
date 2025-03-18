@@ -27,7 +27,7 @@
     />
   </head>
   <body>
-    <div class="login--before">
+    <div class="login--before hidden">
       <header class="header">
         <a href="index.html"
           ><img src="/assests/logo.png" alt="logo" class="nav-logo" />
@@ -182,16 +182,25 @@
     </div>
     <div class="form-overlay animated-hidden"></div>
 
-    <div class="login--after hidden">
+    <div class="login--after">
       <div class="login-container">
-        <div class="login-nav login-nav-mobile">
-          <a href="#">
-            <img
-              class="login-nav-logo"
-              src="/assests/logo.png"
-              alt="khutruke-logo"
-            />
-          </a>
+        <div class="login-nav login-nav-close">
+          <div class="temp-nav-head">
+            <button class="btn-close-logged-in-nav hidden">
+              <ion-icon
+                class="icon-btn-close-nav md hydrated"
+                name="menu-outline"
+                role="img"
+              ></ion-icon>
+            </button>
+            <a href="#">
+              <img
+                class="login-nav-logo"
+                src="/assests/logo.png"
+                alt="khutruke-logo"
+              />
+            </a>
+          </div>
           <div class="pfp">
             <img
               class="login-pfp"

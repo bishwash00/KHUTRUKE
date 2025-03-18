@@ -66,8 +66,8 @@
     background-color: #fdf2e9;
   }
   .icon-mobile-nav {
-    height: 4.8rem;
-    width: 3.8rem;
+    height: 4rem;
+    width: 3rem;
     color: #333;
   }
   .header {
@@ -106,22 +106,47 @@
     padding-top: 2.4rem;
     padding-left: 0.8rem;
     height: 50%;
+    pointer-events: none;
   }
   .btn-logged-in-nav {
     display: block;
     border: none;
     background-color: #fff;
   }
+  .btn-close-logged-in-nav {
+    display: block;
+    border: none;
+    background-color: inherit;
+    z-index: 1000;
+  }
   .icon-btn-nav {
     height: 4.8rem;
     width: 3.8rem;
     color: #333;
   }
-  .login-nav-mobile {
+  .icon-btn-close-nav {
+    height: 4.8rem;
+    width: 3.8rem;
+    color: #fff;
+  }
+  .login-nav-logo {
+    height: 3.6rem;
+  }
+  .temp-nav-head {
+    display: flex;
+    align-items: center;
+  }
+  .login-nav-close {
     position: absolute;
     height: 100vh;
     top: 0;
     left: -200px;
+  }
+  .login-nav-open {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
   }
   .recent-header {
     font-size: 1.8rem;
