@@ -183,8 +183,12 @@
   .balance-history {
     grid-column: 1 / -1;
   }
+  .interfaces {
+    gap: 0px;
+  }
   .interface {
     display: block;
+    height: 80%;
   }
   .interface-visual {
     display: none;
