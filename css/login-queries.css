@@ -183,6 +183,12 @@
   .balance-history {
     grid-column: 1 / -1;
   }
+  .interface {
+    display: block;
+  }
+  .interface-visual {
+    display: none;
+  }
 }
 
 @media (max-width: 23.75em) {
@@ -232,6 +238,12 @@
   .movement_type {
     font-size: 1rem;
     width: auto;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .interface-header {
+    font-size: 1.8rem;
   }
 }
 /* - Font sizes (px)
