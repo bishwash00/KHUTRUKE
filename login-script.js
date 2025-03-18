@@ -520,11 +520,13 @@ const getLocale = () => navigator.language;
 btnLoggedInNav.addEventListener('click', function () {
   loggedInNav.classList.toggle('login-nav-close');
   loggedInNav.classList.toggle('login-nav-open');
-  btnLoggedInNav.classList.add('animated-hidden');
+  btnLoggedInNav.style.opacity = '0';
+  btnLoggedInNav.style.pointerEvents = 'none';
 });
 
 btnCloseLoggedInNav.addEventListener('click', function () {
   loggedInNav.classList.toggle('login-nav-close');
   loggedInNav.classList.toggle('login-nav-open');
-  btnLoggedInNav.classList.remove('animated-hidden');
+  btnLoggedInNav.style.opacity = '1';
+  btnLoggedInNav.style.pointerEvents = 'auto';
 });

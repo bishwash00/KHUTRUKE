@@ -106,18 +106,18 @@
     padding-top: 2.4rem;
     padding-left: 0.8rem;
     height: 50%;
-    pointer-events: none;
   }
   .btn-logged-in-nav {
     display: block;
     border: none;
     background-color: #fff;
+    cursor: pointer;
   }
   .btn-close-logged-in-nav {
     display: block;
     border: none;
     background-color: inherit;
-    z-index: 1000;
+    cursor: pointer;
   }
   .icon-btn-nav {
     height: 4.8rem;
@@ -143,7 +143,7 @@
     left: -200px;
   }
   .login-nav-open {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     top: 0;
     left: 0;
