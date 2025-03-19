@@ -581,11 +581,13 @@ body {
   font-size: 2.4rem;
   font-weight: 500;
 }
-.deposit-balance {
+.deposit-balance,
+.deposit-balance-cpy {
   font-size: 2rem;
   color: #40c057;
 }
-.withdrawl-balance {
+.withdrawl-balance,
+.withdrawl-balance-cpy {
   font-size: 2rem;
   color: #fa5252;
 }

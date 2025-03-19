@@ -111,6 +111,8 @@ const balanceHistory = document.querySelector('.balance-history');
 const balanceAmount = document.querySelector('.balance--amt');
 const recentDeposit = document.querySelector('.deposit-balance');
 const recentWithdrawl = document.querySelector('.withdrawl-balance');
+const recentDepositCpy = document.querySelector('.deposit-balance-cpy');
+const recentWithdrawlCpy = document.querySelector('.withdrawl-balance-cpy');
 const totalDeposits = document.querySelector('.total-deposit');
 const totalWithdrawls = document.querySelector('.total-withdrawl');
 const totalInterest = document.querySelector('.total-interest');
@@ -228,10 +230,14 @@ const showBalance = function (curAcc, cur_type = 'USD', locale) {
 //SHOW RECENT MOVEMENTS
 const showRecentDeposit = function (movement, cur_type, locale) {
   if (cur_type === 'USD') {
-    recentDeposit.textContent = formatCurrency(movement, cur_type, locale);
+    recentDepositCpy.textContent = recentDeposit.textContent = formatCurrency(
+      movement,
+      cur_type,
+      locale
+    );
   }
   if (cur_type === 'EUR') {
-    recentDeposit.textContent = formatCurrency(
+    recentDepositCpy.textContent = recentDeposit.textContent = formatCurrency(
       movement * 0.96,
       cur_type,
       locale
@@ -240,14 +246,12 @@ const showRecentDeposit = function (movement, cur_type, locale) {
 };
 const showRecentWithdrawl = function (movement, cur_type, locale) {
   if (cur_type === 'USD') {
-    recentWithdrawl.textContent = formatCurrency(movement, cur_type, locale);
+    recentWithdrawlCpy.textContent = recentWithdrawl.textContent =
+      formatCurrency(movement, cur_type, locale);
   }
   if (cur_type === 'EUR') {
-    recentWithdrawl.textContent = formatCurrency(
-      movement * 0.96,
-      cur_type,
-      locale
-    );
+    recentWithdrawlCpy.textContent = recentWithdrawl.textContent =
+      formatCurrency(movement * 0.96, cur_type, locale);
   }
 };
 
