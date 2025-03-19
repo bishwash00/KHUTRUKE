@@ -43,7 +43,27 @@ const account2 = {
   ],
 };
 
-const accounts = [account1, account2];
+const account3 = {
+  owner: 'Barsha Karki',
+  movements: [500, 3100, -1500, -7940, 3210, 1000, 8500, -3000],
+  interestRate: 1.7,
+  username: 'barsha00',
+  pin: 3333,
+  mail: 'karkibarsha222@gmail.com',
+
+  movementsDates: [
+    '2025-01-01T10:17:24.185Z',
+    '2025-01-27T17:01:17.194Z',
+    '2025-01-28T09:15:04.904Z',
+    '2025-02-11T23:36:17.929Z',
+    '2025-02-18T21:31:17.178Z',
+    '2025-02-23T07:42:02.383Z',
+    '2025-02-24T14:11:59.604Z',
+    '2025-02-26T10:51:36.790Z',
+  ],
+};
+
+const accounts = [account1, account2, account3];
 
 //LOGIN PAGE MANIPULATIONS
 const beforePage = document.querySelector('.login--before');
